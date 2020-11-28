@@ -6,39 +6,164 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap" rel="stylesheet">
+
   <title>Frontend Mentor | Four card feature section</title>
 
   <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
   <style>
+    body {
+      background-color:  hsl(0, 0%, 98%);
+      color:  hsl(229, 6%, 66%);
+      font-family: 'Poppins', sans-serif;
+      font-size: 15px;
+      line-height: 25px;
+    }
+
+    img {
+      margin-top: 3%;
+      margin-right: 3%;
+      margin-bottom: 3%;
+      margin-left: 75%;
+    }
+
+    h2 {
+      color: hsl(229, 6%, 66%);
+      font-weight: 400;
+    }
+
+    h3 {
+      color:  hsl(234, 12%, 34%);
+      font-weight: 600;
+    }
+
+    .h2-bold {
+      color:  hsl(234, 12%, 34%);
+      font-weight: 600;
+    }
+
+    .top-container {
+      margin-top: 25%;
+      margin-left: 8%;
+      margin-right: 8%;
+      margin-bottom: 20%;
+      text-align: center;
+    }
+
+    .feature-box {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 0 4px 6px 0 rgba(0, 0, 0, 0.1), 0 4px 10px 0 rgba(0, 0, 0, 0.10);
+      margin-top: 8%;
+      margin-right: 8%;
+      margin-bottom: 8%;
+      margin-left: 8%;
+      padding: 5% 5% 3% 5%;
+    }
+
+    #supervisor-box {
+      border-top: 5px hsl(180, 62%, 55%) solid;
+    }
+
+    #team-builder-box {
+      border-top: 5px hsl(0, 78%, 62%) solid;
+    }
+
+    #karma-box {
+      border-top: 5px hsl(34, 97%, 64%) solid;
+    }
+
+    #calculator-box {
+      border-top: 5px hsl(212, 86%, 64%) solid;
+    }
+
+    @media (min-width: 1200px) {
+      h2 {
+        font-size: 35px;
+      }
+
+      .top-container {
+        margin-top: 5%;
+        margin-left: 30%;
+        margin-right: 30%;
+        margin-bottom: 3%;
+        text-align: center;
+      }
+
+      .bottom-container {
+        display: flex;
+      }
+
+      .feature-box {
+        margin: 5%;
+      }
+
+      .left-column {
+        flex: 33%;
+        margin-top: 12%;
+        margin-left: 8%;
+      }
+
+      .center-column {
+        flex: 33%;
+      }
+
+      #team-builder-box {
+        margin-bottom: 12%;
+      }
+
+      .right-column {
+        flex: 33%;
+        margin-top: 12%;
+        margin-right: 8%;
+      }
+    }
+
     .attribution { font-size: 11px; text-align: center; }
     .attribution a { color: hsl(228, 45%, 44%); }
   </style>
 </head>
 <body>
-  
-  Reliable, efficient delivery
-  Powered by Technology
+  <div class="top-container">  
+    <h2>Reliable, efficient delivery</h2>
+    <h2 class="h2-bold">Powered by Technology</h2>
 
-  Our Artificial Intelligence powered tools use millions of project data points 
-  to ensure that your project is successful
-
-  Supervisor
-  Monitors activity to identify project roadblocks
-
-  Team Builder
-  Scans our talent network to create the optimal team for your project
-
-  Karma
-  Regularly evaluates our talent to ensure quality
-
-  Calculator
-  Uses data from past projects to provide better delivery estimates
-
-  
+    <p>Our Artificial Intelligence powered tools use millions of project data points 
+    to ensure that your project is successful</p>
+  </div>
+  <div class="bottom-container">
+    <div class="left-column">
+      <div class="feature-box" id="supervisor-box">
+        <h3>Supervisor</h3>
+        <p>Monitors activity to identify project roadblocks</p>
+        <img class="supervisor-icon" src="images/icon-supervisor.svg" alt="supervisor">
+      </div>
+    </div>
+    <div class="center-column">
+      <div class="feature-box" id="team-builder-box">
+        <h3>Team Builder</h3>
+        <p>Scans our talent network to create the optimal team for your project</p>
+        <img class="team-buider-icon" src="images/icon-team-builder.svg">
+      </div>
+      <div class="feature-box" id="karma-box">
+        <h3>Karma</h3>
+        <p>Regularly evaluates our talent to ensure quality</p>
+        <img class="karma-icon" src="images/icon-karma.svg" alt="karma"> 
+      </div>
+    </div>
+    <div class="right-column">
+      <div class="feature-box" id="calculator-box">  
+        <h3>Calculator</h3>
+        <p>Uses data from past projects to provide better delivery estimates</p>
+        <img class="calculator-icon" src="images/icon-calculator.svg" alt="calculator">
+      </div>
+    </div>
+  </div>
   <footer>
     <p class="attribution">
       Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-      Coded by <a href="#">Your Name Here</a>.
+      Coded by <a href="https://twitter.com/art_art87">Art Carida</a>.
     </p>
   </footer>
 </body>
